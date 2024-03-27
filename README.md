@@ -1,4 +1,4 @@
-# Installing-QGroundControl-on-Ubuntu-ARM64-using-Flatpak
+# Installing QGroundControl on Ubuntu ARM64 using Flatpak
 
 This tutorial will guide you through the process of installing QGroundControl (QGC) on Ubuntu ARM64 using Flatpak. QGroundControl is an open-source ground control station for small unmanned vehicles that allows you to plan and execute autonomous missions.
 
