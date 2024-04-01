@@ -1,6 +1,6 @@
 # Installing QGroundControl on Ubuntu ARM64 using Flatpak
 
-This tutorial will guide you through the process of installing QGroundControl (QGC) on Ubuntu ARM64 using Flatpak. QGroundControl is an open-source ground control station for small unmanned vehicles that allows you to plan and execute autonomous missions.
+This tutorial will guide you through the process of installing QGroundControl (QGC) on Ubuntu ARM64 platforms using Flatpak. QGroundControl is an open-source ground control station for small unmanned vehicles that allows you to plan and execute autonomous missions.
 
 ## Prerequisites
 * Ubuntu ARM64 system (e.g., Raspberry Pi 4, Jetson Nano).
@@ -51,3 +51,17 @@ The `--device=all` option is required for accessing devices like serial ports.
 ## Notes
 If you encounter any issues during installation, make sure your system meets the prerequisites and that you have a stable internet connection.
 QGroundControl may require access to various devices on your system, such as serial ports. Ensure that you grant necessary permissions when prompted.
+
+## Additional Notes
+
+- This repository provides a solution for users seeking QGroundControl support specifically tailored to ARM64 architecture.
+- The provided solution has been tested and verified on Raspberry Pi 4, Raspberry Pi 3, Ubuntu 16.04, 18.04, and 20.04, as well as Nvidia Jetson Nano ARM64 series hardware.
+
+### Issue with Pre-compiled Builds
+
+If you encounter the error message `bash: ./QGroundControl.AppImage: cannot execute binary file: Exec format error`, it's because the pre-compiled Linux build is intended for x86-64 platforms and won’t run on ARM systems.
+
+To address this issue:
+- On ARM-based systems such as Jetson Nano, you'll need to compile QGroundControl from source to run it successfully.
+- Alternatively, you can follow the tutorial provided in this repository for step-by-step instructions on installing QGroundControl on ARM64 platforms using Flatpak.
+
